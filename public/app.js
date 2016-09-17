@@ -18,7 +18,6 @@ var i = g+h;
 alert(i);
 
 
-
 // How can we assign variable values and write  it on html file.
 var a = "Hellow";
 document.write(a);
