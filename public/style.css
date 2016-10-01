@@ -1,0 +1,35 @@
+body{
+    background-color:lightslategray;
+    width:100%;
+}
+table{
+    background-color:lightslategray;
+    box-shadow: 5px 3px 50px black;
+    border-spacing: 30px 10px;
+    width:70%;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+td{
+    width:200px;
+    border-left:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+        padding:15px;
+}
+th{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width:200px;
+        padding:15px;
+}
+td:hover{
+    background-color:cadetblue;
+    box-shadow: 5px 3px 50px black;
+        border:0px solid black;
+}
+th:hover{
+    background-color:lightseagreen;
+    box-shadow: 5px 3px 50px black;
+    border:0px solid black;
+}
