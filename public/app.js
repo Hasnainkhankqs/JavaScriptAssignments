@@ -81,7 +81,7 @@ var operator = prompt("write your operator like +,-,*,/,sqrt,power,sin,tan,cos")
 document.getElementById("fullName").innerHTML = (name+last);
 document.getElementById("email").innerHTML = (email);
 
-if (operator ==="+" || operator==="-" || operator==="*" || operator==="/" || operator==="!"){
+if (operator ==="+" || operator==="-" || operator==="*" || operator==="/" || operator==="power"){
     var secondNumber = parseInt(prompt("type your second number"));
 }
 if ( operator === "+"){document.getElementById("addition").innerHTML=(firstNumber+secondNumber);}
