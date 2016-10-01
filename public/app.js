@@ -73,10 +73,16 @@
 // else{
 //     document.write("incorrect operator");
 // }
+var name = prompt("write your name");
+var last = prompt("write your sur name");
+var email = prompt("write your Email address");
 var firstNumber = parseInt(prompt("write your first number"));
-var operator = prompt("write your operator like +,-,*,/");
+var operator = prompt("write your operator like +,-,*,/,sqrt,power,sin,tan,cos");
+document.getElementById("fullName").innerHTML = (name+last);
+document.getElementById("email").innerHTML = (email);
+
 if (operator ==="+" || operator==="-" || operator==="*" || operator==="/" || operator==="!"){
-    var secondNumber = parseInt(prompt("type your second number")); 
+    var secondNumber = parseInt(prompt("type your second number"));
 }
 if ( operator === "+"){document.getElementById("addition").innerHTML=(firstNumber+secondNumber);}
     
@@ -88,7 +94,12 @@ else if (operator === "/"){document.getElementById("division").innerHTML=(firstN
 
 else if (operator === "power"){document.getElementById("Power").innerHTML=(Math.pow(firstNumber,secondNumber))}
 
-else if (operator === "sin"){document.getElementById("Sin").innerHTML=(Math.sin(firstNumber))}
+else if (operator === "sin"){document.getElementById("sin").innerHTML=(Math.sin(firstNumber))}
 
-else if (operator === "square"){document.getElementById("square-root").innerHTML=(Math.sqrt(firstNumber))}
+else if (operator === "tan"){document.getElementById("tan").innerHTML=(Math.tan(firstNumber))}
+
+else if (operator === "cos"){document.getElementById("cos").innerHTML=(Math.cos(firstNumber))}
+
+else if (operator === "sqrt"){document.getElementById("square-root").innerHTML=(Math.sqrt(firstNumber))}
+
 else (alert("Plese define operator"));
