@@ -73,7 +73,22 @@
 // else{
 //     document.write("incorrect operator");
 // }
-    var firstNumber = prompt("write your first number");
-var operation = Prompt("write your operator");
-var operationParse = parseInt(operation);
-var firstNumberParse = parseInt(firstNumber)
+var firstNumber = parseInt(prompt("write your first number"));
+var operator = prompt("write your operator like +,-,*,/");
+if (operator ==="+" || operator==="-" || operator==="*" || operator==="/" || operator==="!"){
+    var secondNumber = parseInt(prompt("type your second number")); 
+}
+if ( operator === "+"){document.getElementById("addition").innerHTML=(firstNumber+secondNumber);}
+    
+else if ( operator === "-"){document.getElementById("subtraction").innerHTML=(firstNumber-secondNumber);}
+
+else if ( operator === "*"){document.getElementById("multiplication").innerHTML=(firstNumber*secondNumber);}
+
+else if (operator === "/"){document.getElementById("division").innerHTML=(firstNumber/secondNumber);}
+
+else if (operator === "power"){document.getElementById("Power").innerHTML=(Math.pow(firstNumber,secondNumber))}
+
+else if (operator === "sin"){document.getElementById("Sin").innerHTML=(Math.sin(firstNumber))}
+
+else if (operator === "square"){document.getElementById("square-root").innerHTML=(Math.sqrt(firstNumber))}
+else (alert("Plese define operator"));
